@@ -35,6 +35,16 @@ class CRUDMixin(object):
         db.session.delete(self)
         return commit and db.session.commit()
 
+    @classmethod
+    def get_by_id(cls, record_id):
+        """Get record by ID."""
+        if any(
+                (isinstance(record_id, basestring) and record_id.isdigit(),
+                 isinstance(record_id, (int, float))),
+        ):
+            return cls.query.get(int(record_id))
+        return None
+
 
 class Model(CRUDMixin, db.Model):
     """Base model class that includes CRUD convenience methods."""
@@ -50,16 +60,6 @@ class SurrogatePK(object):
     __table_args__ = {'extend_existing': True}
 
     id = Column(db.Integer, primary_key=True)
-
-    @classmethod
-    def get_by_id(cls, record_id):
-        """Get record by ID."""
-        if any(
-                (isinstance(record_id, basestring) and record_id.isdigit(),
-                 isinstance(record_id, (int, float))),
-        ):
-            return cls.query.get(int(record_id))
-        return None
 
 
 def reference_col(tablename, nullable=False, pk_name='id', **kwargs):
