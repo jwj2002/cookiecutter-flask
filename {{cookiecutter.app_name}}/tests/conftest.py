@@ -4,8 +4,8 @@
 import pytest
 from webtest import TestApp
 
-from {{cookiecutter.app_name}}.app import create_app
-from {{cookiecutter.app_name}}.database import db as _db
+from app import create_app
+from app.database import db as _db
 
 from .factories import UserFactory
 

@@ -5,7 +5,7 @@ See: http://webtest.readthedocs.org/
 """
 from flask import url_for
 
-from {{cookiecutter.app_name}}.users.models import User
+from app.users.models import User
 
 from .factories import UserFactory
 

@@ -3,11 +3,11 @@
 from flask import Blueprint, flash, redirect, render_template, request, url_for
 from flask_login import login_required, login_user, logout_user
 
-from {{cookiecutter.app_name}}.extensions import login_manager
-from {{cookiecutter.app_name}}.public.forms import LoginForm
-from {{cookiecutter.app_name}}.users.forms import RegisterForm
-from {{cookiecutter.app_name}}.users.models import User
-from {{cookiecutter.app_name}}.utils import flash_errors
+from app.extensions import login_manager
+from app.public.forms import LoginForm
+from app.users.forms import RegisterForm
+from app.users.models import User
+from app.utils import flash_errors
 
 blueprint = Blueprint('public', __name__, static_folder='../static')
 

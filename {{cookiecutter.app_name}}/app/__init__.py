@@ -1,12 +1,12 @@
-# -*- coding: utf-8 -*-
-"""The app module, containing the app factory function."""
+"""Main application package."""
+
 from flask import Flask, render_template
 
-from {{cookiecutter.app_name}} import commands, public, users
-from {{cookiecutter.app_name}}.extensions import bcrypt, cache, csrf_protect, db, debug_toolbar, login_manager, migrate, webpack
+from app import commands, public, users
+from app.extensions import bcrypt, cache, csrf_protect, db, debug_toolbar, login_manager, migrate, webpack
 
 
-def create_app(config_object='{{cookiecutter.app_name}}.settings'):
+def create_app(config_object='app.settings'):
     """An application factory, as explained here: http://flask.pocoo.org/docs/patterns/appfactories/.
 
     :param config_object: The configuration object to use.

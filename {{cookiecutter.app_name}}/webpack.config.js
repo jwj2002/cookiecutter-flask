@@ -27,7 +27,7 @@ module.exports = {
     ],
   },
   output: {
-    path: path.join(__dirname, '{{cookiecutter.app_name}}', 'static', 'build'),
+    path: path.join(__dirname, 'app', 'static', 'build'),
     publicPath: `${publicHost}/static/build/`,
     filename: '[name].[hash].js',
     chunkFilename: '[id].[hash].js',
@@ -53,7 +53,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('[name].[hash].css'),
     new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' }),
-    new ManifestRevisionPlugin(path.join(__dirname, '{{cookiecutter.app_name}}', 'webpack', 'manifest.json'), {
+    new ManifestRevisionPlugin(path.join(__dirname, 'app', 'webpack', 'manifest.json'), {
       rootAssetPath,
       ignorePaths: ['/js', '/css'],
     }),

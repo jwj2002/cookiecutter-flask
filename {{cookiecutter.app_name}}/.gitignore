@@ -49,8 +49,8 @@ env/
 /node_modules/
 
 # webpack-built files
-/{{cookiecutter.app_name}}/static/build/
-/{{cookiecutter.app_name}}/webpack/manifest.json
+/app/static/build/
+/app/webpack/manifest.json
 
 # Configuration
 .env

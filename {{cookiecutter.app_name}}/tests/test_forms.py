@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """Test forms."""
 
-from {{cookiecutter.app_name}}.public.forms import LoginForm
-from {{cookiecutter.app_name}}.users.forms import RegisterForm
+from app.public.forms import LoginForm
+from app.users.forms import RegisterForm
 
 
 class TestRegisterForm:
