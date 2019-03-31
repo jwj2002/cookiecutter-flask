@@ -1,9 +1,27 @@
-*.py[cod]
+# Virtual Environments
+venv*/
 
+# dotenv
+.flaskenv
+.env
+
+# Migrations
+migrations/
+
+# Backup files
+.#*
+
+# Byte-compiled / optimized DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.cache
+/DS_store
 # C extensions
 *.so
 
 # Packages
+.Python
 *.egg
 *.egg-info
 build
@@ -24,6 +42,7 @@ pip-log.txt
 .coverage
 .tox
 nosetests.xml
+.pytest_cache
 
 # si
 *.mo
@@ -46,3 +65,16 @@ output/
 
 myflaskapp/
 bower_components
+
+# PyCharm
+.idea/
+.DS_Store
+
+.webassets-cache
+
+# npm
+/node_modules
+
+# sqlite
+.sqlite
+*.db
