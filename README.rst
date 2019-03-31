@@ -5,14 +5,9 @@ A Flask template for cookiecutter_.
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 
-.. image:: https://travis-ci.org/sloria/cookiecutter-flask.svg?branch=master
-    :target: https://travis-ci.org/sloria/cookiecutter-flask
+.. image:: https://travis-ci.org/jwj2002/cookiecutter-flask.svg?branch=master
+    :target: https://travis-ci.org/jwj2002/cookiecutter-flask
     :alt: Build Status
-
-.. image:: https://img.shields.io/badge/calver-YY.MINOR.MICRO-22bfda.svg
-    :target: http://calver.org
-    :alt: CalVer
-
 
 Use it now
 ----------
