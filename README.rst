@@ -9,7 +9,7 @@ A Flask template for cookiecutter_.
     :target: https://travis-ci.org/jwj2002/cookiecutter-flask
     :alt: Build Status
 
-.. image:: https://img.shields.io/static/v1.svg?label=PyCalVer&message=vv201903.0001&color=blue
+.. image:: https://img.shields.io/static/v1.svg?label=PyCalVer&message=vv201903.0003-alpha&color=blue
 
 Use it now
 ----------
@@ -226,6 +226,6 @@ Thanks @andreoliw for these contributions.
 - Working User model and registration
 
 
-[version_img]: https://img.shields.io/static/v1.svg?label=PyCalVer&message=v201903.0030&color=blue
+[version_img]: https://img.shields.io/static/v1.svg?label=PyCalVer&message=v201903.0003-alpha&color=blue
 [version_ref]: https://pypi.org/project/pycalver/
 
