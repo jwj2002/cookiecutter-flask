@@ -2,7 +2,7 @@
 """The app module, containing the app factory function."""
 from flask import Flask, render_template
 
-from {{cookiecutter.app_name}} import commands, public, user
+from {{cookiecutter.app_name}} import commands, public, users
 from {{cookiecutter.app_name}}.extensions import bcrypt, cache, csrf_protect, db, debug_toolbar, login_manager, migrate, webpack
 
 
@@ -37,7 +37,7 @@ def register_extensions(app):
 def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(public.views.blueprint)
-    app.register_blueprint(user.views.blueprint)
+    app.register_blueprint(users.views.blueprint)
     return None
 
 
@@ -59,7 +59,7 @@ def register_shellcontext(app):
         """Shell context objects."""
         return {
             'db': db,
-            'User': user.models.User}
+            'User': users.models.User}
 
     app.shell_context_processor(shell_context)
 

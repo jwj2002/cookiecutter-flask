@@ -4,7 +4,7 @@ import datetime as dt
 
 import pytest
 
-from {{cookiecutter.app_name}}.user.models import Role, User
+from {{cookiecutter.app_name}}.users.models import Role, User
 
 from .factories import UserFactory
 
