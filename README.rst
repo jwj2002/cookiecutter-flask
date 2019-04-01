@@ -9,7 +9,11 @@ A Flask template for cookiecutter_.
     :target: https://travis-ci.org/jwj2002/cookiecutter-flask
     :alt: Build Status
 
-.. image:: https://img.shields.io/static/v1.svg?label=PyCalVer&message=vv201903.0003-alpha&color=blue
+.. image:: https://img.shields.io/static/v1.svg?label=PyCalVer&message=v18.1.0&color=blue
+
+This is a modified fork of:
+
+* https://github.com/sloria/cookiecutter-flask.git
 
 Use it now
 ----------
@@ -225,7 +229,4 @@ Thanks @andreoliw for these contributions.
 - Bootstrap 3 final
 - Working User model and registration
 
-
-[version_img]: https://img.shields.io/static/v1.svg?label=PyCalVer&message=v201903.0003-alpha&color=blue
-[version_ref]: https://pypi.org/project/pycalver/
 
