@@ -1,9 +1,27 @@
-*.py[cod]
+# Virtual Environments
+venv*/
 
+# dotenv
+.flaskenv
+.env
+
+# Migrations
+migrations/
+
+# Backup files
+.#*
+
+# Byte-compiled / optimized DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.cache
+/DS_store
 # C extensions
 *.so
 
 # Packages
+.Python
 *.egg
 *.egg-info
 build
@@ -24,8 +42,9 @@ pip-log.txt
 .coverage
 .tox
 nosetests.xml
+.pytest_cache
 
-# Translations
+# si
 *.mo
 
 # Mr Developer
@@ -39,21 +58,23 @@ output/*/index.html
 
 # Sphinx
 docs/_build
+README.html
+
+# Cookiecutter
+output/
+
+myflaskapp/
+bower_components
+
+# PyCharm
+.idea/
+.DS_Store
 
 .webassets-cache
 
-# Virtualenvs
-env/
-
 # npm
-/node_modules/
+/node_modules
 
-# webpack-built files
-/app/static/build/
-/app/webpack/manifest.json
-
-# Configuration
-.env
-
-# Development database
+# sqlite
+.sqlite
 *.db
