@@ -37,4 +37,4 @@ Flask-Caching>=1.0.0
 Flask-DebugToolbar==0.10.1
 
 # Environment variable parsing
-python-dotenv==0.10.1
+python-dotenv==0.15.0
